@@ -32,7 +32,6 @@ easyrtc.listen(httpApp, io, {logLevel:"debug", logDateEnable:true});
 var userList = {};
 var waitingList = {};
 var socketCount=0;
-
 io.sockets.on("connection", function(socket) {
   socketCount++;
 
@@ -42,6 +41,7 @@ io.sockets.on("connection", function(socket) {
     
     // send the connected user list to the new user
     socket.emit("ui_user_set", userList);
+    socket.emit("total_user", socketCount)
     // send the new user to the all other users
     socket.broadcast.emit("ui_user_add", userList[socket.id]);
   });

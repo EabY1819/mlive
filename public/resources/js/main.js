@@ -11,7 +11,7 @@
   var elUsers = $('#user_container');
   var elText = $('#message');
   var btnSend = $('#send_btn');
-
+  var elTotal = $(".text-body");
   // bind the event listeners
   btnSend.on('click', function() {
     var text = elText.val().trim();
@@ -97,9 +97,9 @@
           elUsers.find('#'+userId).remove();
         });
         easyrtc.webSocket.on('total_user', function(userId) {
-          console.log("aaaa", userId)
-          elTotal.append('<h4>'+userId+"</h4>")
-      });
+            console.log("aaaa", userId)
+            elTotal.append('<h4> online: '+userId+"</h4>")
+        });
         easyrtc.webSocket.on('ui_user_set', function(userList) {
           for (id in userList) {
             elUsers.append('<div id='+userList[id].id+'>'+userList[id].name+'</div>');
