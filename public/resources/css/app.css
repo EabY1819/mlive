@@ -158,6 +158,7 @@ background-color: transparent;
   -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%);
   box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%);
   color: #fff;
+  overflow-y: auto;
 }
 textarea {
   width: 100%;
