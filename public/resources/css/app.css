@@ -161,8 +161,9 @@ background-color: transparent;
   overflow-y: auto;
 }
 textarea {
-  width: 100%;
+  width: 86%;
   background: transparent;
   border-color: #fff;
   color: #fff;
+  float: right;
 }
