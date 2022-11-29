@@ -3,7 +3,7 @@ var http    = require("http");              // http server core module
 var express = require("express");           // web framework external module
 var sio     = require("socket.io");         // web socket external module
 var easyrtc = require("easyrtc");           // EasyRTC external module
-import adapter from 'webrtc-adapter';
+var adapter = require('webrtc-adapter');
 adapter.browserDetails.browser
 // setup and configure Express http server. Expect a subfolder called "static" to be the web root.
 var httpApp = express();
