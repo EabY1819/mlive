@@ -219,4 +219,8 @@ video#selfVideo {
   width: 32%;
   margin: 18px;
 }
+.pos-middle {
+  margin: 0;
+  padding: 75px 0 0 0;
+}
 }
