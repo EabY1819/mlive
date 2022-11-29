@@ -1,3 +1,5 @@
+var adapter = require('webrtc-adapter');
+adapter.browserDetails.browser
 (function($) {
 
   var self = {
