@@ -167,3 +167,21 @@ textarea {
   color: #fff;
   float: right;
 }
+
+
+
+@media(max-width:1060px){
+  .img-left img {
+    height: 494px;
+    object-fit: cover;
+    border-radius: 20px;
+    position: absolute;
+    width: 93%;
+}
+.text-body h2 {
+  font-size: 40px;
+  color: purple;
+  font-weight: 700;
+  text-align: center;
+}
+}
