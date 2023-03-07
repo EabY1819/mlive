@@ -24,18 +24,18 @@
   
     <div class="container-fluid height-fill">
       <div class="row height-fill pos-middle">
-        <div id="video_container" class="col-xs-2">
+        <div id="video_container" class="col-md-3">
           <video poster="resources/img/earth.gif" id="selfVideo"> </video>
           <video poster="resources/img/earth.gif" id="partnerVideo"> </video> 
         </div>
         
-        <div id="messages_container" class="col-xs-6 well height-fill">
+        <div id="messages_container" class="col-md-6 well height-fill">
         </div>
         
-        <div id="user_container" class="col-xs-2 well height-fill">
-        </div>
+        <!-- <div id="user_container" class="col-xs-1 well height-fill">
+        </div> -->
         
-        <div id="button_container" class="col-xs-2">
+        <div id="button_container" class="col-md-2">
           <a class="btn btn-block btn-success"  id="next_btn" title="Get a Random Stranger">
             <i class="fa fa-forward fa-3x"></i>
             <span class="shortcut">Next</span>
@@ -52,10 +52,10 @@
       </div>
   
       <div class="row pos-bottom">
-        <div class="col-xs-7 col-xs-offset-2">
+        <div class="col-md-7 col-xs-offset-2">
           <textarea id="message" rows="3" name="message"> </textarea>
         </div>
-        <div class="col-xs-1">
+        <div class="col-md-1">
           <a class="btn btn-block btn-success btn-large disabled" id="send_btn">
             <i class="fa fa-envelope fa-2x"></i>
             <span class="shortcut">(Enter)</span>
@@ -67,11 +67,12 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="libs/jquery/jquery-1.11.3.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
   
     <script src="/socket.io/socket.io.js"></script>
     <script src="/easyrtc/easyrtc.js"></script>
     <script src="resources/js/app.js"></script>
+    <script src="resources/js/ios-websocket.js"></script>
 
   </body>
 </html>
