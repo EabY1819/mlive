@@ -147,6 +147,7 @@ video {
   max-width: 100%;
   border-radius: 10%;
   margin-bottom: 35px;
+  transform: rotateY(180deg);
 }
 .well {
   min-height: 20px;
