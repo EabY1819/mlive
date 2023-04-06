@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MLive</title>
 
     <link href="resources/css/app.css" rel="stylesheet">
 
@@ -12,6 +12,7 @@
     <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 
@@ -26,22 +27,13 @@
                     <img src="resources/img/Live.gif" width="100px"/>
                 </div>
             </div>
-            <!-- <div class="col-md-9">  
+            <div class="col-md-9">  
                 <ul>
                     <li>
-                        <a href="">Home</a>
-                    </li>
-                    <li>
-                        <a href="">About Us</a>
-                    </li>
-                    <li>
-                        <a href="">Home</a>
-                    </li>
-                    <li>
-                        <a href="">Home</a>
+                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeqSUKbq4qvQyWxVY8Dym90-rXH4X76jkAHIXBbyDt-6UU9yQ/viewform?vc=0&c=0&w=1&flr=0&usp=mail_form_link&urp=gmail_link">Survey</a>
                     </li>
                 </ul>
-            </div> -->
+            </div>
             <!-- <div class="col-md-2">
                 <div class="social-links">
                     
@@ -55,6 +47,39 @@
 
 
     <div class="container">
+        <div class="slider">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="resources/img/zurag0.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="resources/img/zurag1.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="resources/img/zurag3.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="resources/img/zurag4.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="resources/img/zurag5.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="resources/img/zurag6.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="resources/img/zurag8.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="resources/img/zurag9.png">
+                  </div>
+                </div>
+                
+              </div>
+        </div>
+        
+        
         <div class="row">
             <div class="col-md-6">
                 <div class="text-body">
@@ -78,16 +103,37 @@
             <div class="col-md-6">
                 <div class="img-left">
                     <img src="https://img.freepik.com/free-vector/video-conferencing-concept-landing-page_52683-21521.jpg?w=740&t=st=1668342231~exp=1668342831~hmac=29fabdbf8f1c488e29294d8c90a011dbebc9132452bb8e7347cd1481c971815d" width="100%">
+                    
                 </div>
             </div>
+            
         </div>
+        
         <script src="libs/jquery/jquery-1.11.3.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
          <script src="libs/bootstrap/js/bootstrap.min.js"></script>
            <script src="/socket.io/socket.io.js"></script>
     <script src="/easyrtc/easyrtc.js"></script>
     <script src="resources/js/main.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 4,
+          spaceBetween: 30,
+          centeredSlides: true,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+
+        });
+      </script>
     </div>
    
 </body>

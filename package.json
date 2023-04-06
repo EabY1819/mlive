@@ -1,5 +1,5 @@
 {
-  "name": "enlargify",
+  "name": "mlive",
   "description": "Chat application using EasyRTC",
   "version": "0.0.1",
   "dependencies": {
@@ -16,6 +16,6 @@
   "engines": {
     "node": ">=0.8"
   },
-  "author": "merictaze",
-  "license": "MIT"
+  "author": "merictaze"
+
 }

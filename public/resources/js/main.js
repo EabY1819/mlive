@@ -84,7 +84,7 @@
       }
     );
     
-    easyrtc.connect('enlargify_app',
+    easyrtc.connect('mlive',
       // success callback
       function(socketId) {
         self.id = socketId;
