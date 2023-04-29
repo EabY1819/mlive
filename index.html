@@ -26,13 +26,36 @@
     <![endif]-->
   </head>
   <body>
-    
+    <!-- tweet -->
+    <!-- <span id="sharebuttons">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-text="mlive" data-via="daniel_hede" data-related="omegle" data-hashtags="epsile">Tweet</a><br>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      <div class="g-plusone"></div>
+      <script type="text/javascript">
+        (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+      </script>
+    </span> -->
+
   
+
     <div class="container-fluid height-fill">
       <div class="row height-fill pos-middle">
         <div id="video_container" class="col-md-3">
           <video poster="resources/img/earth.gif" id="selfVideo"> </video>
+          <div class="button-cam-mic">
+            <button id="mute_btn" class="mute_button">Mic</i></button>
+            <button id="toggle_camera_btn" class="mute_button">Toggle Camera</button>
+          </div>          
           <video poster="resources/img/earth.gif" id="partnerVideo"> </video> 
+          <div class="button-cam-mic-mobile">
+            <button id="mute_btn" class="mute_button">Mic</i></button>
+            <button id="toggle_camera_btn" class="mute_button">Toggle Camera</button>
+          </div>   
+          
         </div>
         
         <div id="messages_container" class="col-md-6 well height-fill">
